@@ -129,6 +129,7 @@ export PATH="/usr/local/pgsql/bin:$PATH"
 export GITAWAREPROMPT=~/.bash/git-aware-prompt # Show git-info in bash prompt
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PAGER="most"
 
 # Alaises
 

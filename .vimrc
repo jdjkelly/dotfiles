@@ -628,7 +628,6 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 " Set Merlin as Syntastic checker for OCaml
 let g:syntastic_ocaml_checkers = ['merlin']
 
-
 " perl
 
 
@@ -665,6 +664,7 @@ let g:airline#extensions#virtualenv#enabled = 1
 " Default highlight is better than polyglot
 let g:polyglot_disabled = ['python']
 let python_highlight_all = 1
+
 
 
 " ruby

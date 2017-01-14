@@ -108,3 +108,6 @@ eval "$(rbenv init -)"
 
 # OPAM configuration
 . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+# Bind tab to menu-complete so that tab-completion works
+bind '"\t":menu-complete'

@@ -10,10 +10,14 @@ set -x LANG en_US.UTF-8
 set -x LC_ALL en_US.UTF-8
 set -x RBXOPT -X19
 set -x TDD 0
+set -x GOROOT /usr/local/go
+set -x GOPATH $home/work/go
 
 # Paths
 test -d /usr/local/sbin                      ; and set PATH /usr/local/sbin $PATH
 test -d /usr/local/bin                       ; and set PATH /usr/local/bin $PATH
+test -d /usr/local/go			     ; and set PATH $GOPATH/bin $PATH
+test -d /usr/local/go			     ; and set PATH $GOROOT/bin $PATH
 
 # Navigation
 function ..    ; cd .. ; end

@@ -1,4 +1,13 @@
-# Requirements
+# Dotfiles
 
-`pygments`
-`most`
+## Requirements
+
+- neovim
+- tree
+- silversearcher-ag
+
+## Install
+
+`cp -r .config ~/.config`
+`nvim +PlugInstall`
+

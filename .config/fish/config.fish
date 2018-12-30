@@ -11,13 +11,14 @@ set -x LC_ALL en_US.UTF-8
 set -x RBXOPT -X19
 set -x TDD 0
 set -x GOROOT /usr/local/go
-set -x GOPATH $home/work/go
+set -x GOPATH $HOME/work/go
 
 # Paths
 test -d /usr/local/sbin                      ; and set PATH /usr/local/sbin $PATH
 test -d /usr/local/bin                       ; and set PATH /usr/local/bin $PATH
 test -d /usr/local/go			     ; and set PATH $GOPATH/bin $PATH
 test -d /usr/local/go			     ; and set PATH $GOROOT/bin $PATH
+test -d $HOME/.rbenv/bin		     ; and set PATH $HOME/.rbenv/bin $PATH
 
 # Navigation
 function ..    ; cd .. ; end
@@ -41,7 +42,17 @@ function mp       ; nvim $argv ; end
 function t        ; command tree -C $argv ; end
 function tmux     ; command tmux -2 $argv ; end
 function tunnel   ; ssh -D 8080 -C -N $argv ; end
+function vault    ; cd ~/1pass ; python -m SimpleHTTPServer ; end
 function view     ; nvim -R $argv ; end
+
+# rbenv
+status --is-interactive; and source (rbenv init -|psub)
+
+# nvm
+function nvm
+  bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end
+nvm > /dev/null
 
 # Fuzzy find & vim
 function vp

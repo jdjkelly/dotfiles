@@ -1,8 +1,11 @@
 " Install plugins
 call plug#begin('~/.vim/plugged')
 
+" Theme
 Plug 'drewtempelmeyer/palenight.vim'
+" Lightline 
 Plug 'itchyny/lightline.vim'
+" Fuzzy search
 Plug '~/.fzf'
 
 call plug#end()
@@ -27,3 +30,14 @@ colorscheme palenight
 let g:lightline = {
   \ 'colorscheme': 'palenight',
   \ }
+
+" Configure tab spacing
+filetype plugin indent on
+" On pressing tab, insert 2 spaces
+set expandtab
+" show existing tab with 2 spaces width
+set tabstop=2
+set softtabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+

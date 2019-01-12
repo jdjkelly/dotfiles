@@ -7,6 +7,8 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'itchyny/lightline.vim'
 " Fuzzy search
 Plug '~/.fzf'
+" Search
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
@@ -31,6 +33,9 @@ let g:lightline = {
   \ 'colorscheme': 'palenight',
   \ }
 
+" Configure ack.vim/ag
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Configure tab spacing
 filetype plugin indent on
 " On pressing tab, insert 2 spaces
@@ -41,3 +46,5 @@ set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
 
+" Configure the display of line numbers
+set number

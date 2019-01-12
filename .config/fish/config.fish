@@ -44,6 +44,7 @@ function tmux     ; command tmux -2 $argv ; end
 function tunnel   ; ssh -D 8080 -C -N $argv ; end
 function vault    ; cd ~/1pass ; python -m SimpleHTTPServer ; end
 function view     ; nvim -R $argv ; end
+function qr       ; qrencode -o qrcode.png '$argv' ; end
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)

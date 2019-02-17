@@ -9,6 +9,8 @@ Plug 'itchyny/lightline.vim'
 Plug '~/.fzf'
 " Search
 Plug 'mileszs/ack.vim'
+" Search
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 

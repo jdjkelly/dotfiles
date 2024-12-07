@@ -25,6 +25,7 @@ brew "the_silver_searcher"
 brew "tig"
 brew "yt-dlp"
 brew "nvm"
+brew "starship"
 # Quick Look Plugins
 cask "qlcolorcode"
 cask "qlstephen"

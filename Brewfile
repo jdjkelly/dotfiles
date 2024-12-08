@@ -20,12 +20,12 @@ brew "jq"
 brew "fx"
 brew "postgresql@16", restart_service: true
 brew "redis", restart_service: true
-brew "tailscale"
 brew "the_silver_searcher"
 brew "tig"
 brew "yt-dlp"
 brew "nvm"
 brew "starship"
+brew "tailscale" # cli
 # Quick Look Plugins
 cask "qlcolorcode"
 cask "qlstephen"
@@ -54,6 +54,9 @@ cask "telegram-desktop"
 cask "visual-studio-code"
 cask "zoom"
 cask "superhuman"
+cask "microsoft-remote-desktop"
 cask "doppler"
+cask "lm-studio"
+cask "rectangle"
 # Fonts
 cask "font-fira-code-nerd-font"

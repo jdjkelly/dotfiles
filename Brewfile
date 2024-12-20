@@ -26,6 +26,9 @@ brew "yt-dlp"
 brew "nvm"
 brew "starship"
 brew "tailscale" # cli
+brew "gnupg"
+brew "awscli"
+brew "mas"
 # Quick Look Plugins
 cask "qlcolorcode"
 cask "qlstephen"
@@ -36,6 +39,7 @@ cask "quicklook-csv"
 cask "betterzip"
 cask "webpquicklook"
 cask "suspicious-package"
+cask "figma-agent"
 # Apps
 cask "1password"
 cask "1password-cli"

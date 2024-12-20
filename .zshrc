@@ -15,8 +15,8 @@ export GPG_TTY=$(tty)
 export PATH=$PATH:/Users/joshuakelly/bin
 
 # Environment variables
-export OPENAI_API_KEY=$(security find-generic-password -s 'OpenAI API Key' -w)
-export ANTHROPIC_API_KEY=$(security find-generic-password -s 'Anthropic API Key' -w)
+export OPENAI_API_KEY=$(security find-generic-password -s 'OPENAI_API_KEY' -w)
+export ANTHROPIC_API_KEY=$(security find-generic-password -s 'ANTHROPIC_API_KEY' -w)
 
 # Aliases
 alias '??'='gh copilot suggest';
